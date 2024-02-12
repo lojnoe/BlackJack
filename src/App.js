@@ -211,7 +211,7 @@ const App = () => {
       setGameInProgress(false);
       setShowRestartButton(true);
 
-      
+
     }
     setDealerScore(suma);
     setDealerCards(updatedDealerCards); // Actualiza la mano del crupier
@@ -242,20 +242,21 @@ const App = () => {
             <h2>Puntuación del Crupier: {dealerScore}</h2>
             {/* Mostrar las cartas del crupier, ocultando la primera carta si aún no se ha revelado */}
             {dealerCards.map((card, index) => (
-          <div>
-              <img className='foto'
-                key={index}
-                src={`./assets/PNG/${index === 1 && !showDealerFirstCard ? 'back.png' : card.nombre}`}
-                alt={card.nombre}
-                style={{ width: '100px', height: '150px' }}/>
-            </div>
+              <div>
+                <img className='foto'
+                  key={index}
+                  src={`./assets/PNG/${index === 1 && !showDealerFirstCard ? 'back.png' : card.nombre}`}
+                  alt={card.nombre}
+                  style={{ width: '100px', height: '150px' }} />
+              </div>
             ))}
 
           </div>
           <div className='carta'>
             <button onClick={handleDealer} disabled={!gameInProgress}>Pedir carta crupier</button>
-            {showRestartButton && <button onClick={handleRestart}>Reiniciar Partida</button>}
+            {showRestartButton && <button onClick={handleRestart} >Reiniciar Partida</button>}
           </div>
+         
           <div className="" >
             <h2>Puntuación del Jugador: {playerScore}</h2>
             {/* Mostrar las cartas del jugador */}
@@ -271,19 +272,24 @@ const App = () => {
           <div className='carta'>
             <button onClick={handleHit} disabled={!gameInProgress}>Pedir carta</button>
             <button onClick={handleStand} disabled={!gameInProgress}>Plantarse</button>
+            
           </div>
-          <div className='mensajes'>
-            {messages.map((message, index) => (
-              <p key={index}>{message}</p>
-            ))}
+          <div>
+            {messages.length > 0 && (
+              <h2 className='mensajes'>
+                {messages.map((message, index) => (
+                  <p key={index}>{message}</p>
+                ))}
+              </h2>
+            )}
+            
           </div>
-         
         </div>
-        
+
       </div>
       <div>
-      <img className='cuphead' src="./assets/Nueva carpeta/Cup_run.webp" alt=""></img>
-      <img className='cuphead1' src="./assets/Nueva carpeta/Cup_run.webp" alt=""></img>
+        <img className='cuphead' src="./assets/Nueva carpeta/Cup_run.webp" alt=""></img>
+        <img className='cuphead1' src="./assets/Nueva carpeta/MugmanTrailer.webp" alt=""></img>
       </div>
     </div>
   );

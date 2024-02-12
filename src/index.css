@@ -42,7 +42,7 @@ code {
 }
 
 .container-c {
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,11 +60,17 @@ code {
 }
 
 button {
-
+  background: #000000;
+  border-radius: 1000px;
+  padding: 15px 30px;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
   transition: .3s ease-in-out;
   font-weight: bolder;
   cursor: pointer;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: none;
 }
 
 button:hover {
@@ -73,9 +79,7 @@ button:hover {
   border: none;
   border-radius: 10px;
   padding: 1rem;
-
   background-color: rgb(212, 153, 25);
-  transition: background-color color .3s ease-in-out;
   color: aliceblue;
   border: 1px solid black;
   background: linear-gradient(145deg, #000000, #000000);
@@ -109,12 +113,14 @@ h2 {
 }
 
 .mensajes {
+  
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 1rem;
   text-align: center;
   font-size: 1em;
-  margin: auto;
+  
+  margin: 12px auto;
   width: 50%;
   border-radius: 10px;
   font-weight: lighter;
@@ -247,7 +253,6 @@ h2 {
     width: 50%;
     border-radius: 10px;
     font-weight: lighter;
-
   }
 }
 
@@ -255,12 +260,14 @@ h2 {
   z-index: 2;
   position: absolute;
   margin-left: -65%;
-  margin-top: 8% ;
+  margin-top: 8%;
+  width: 150px;
 }
+
 .cuphead1 {
   z-index: 2;
   position: absolute;
-  margin-left: 20%;
-  margin-top: 8% ;
-  transform: scaleX(-1);
+  margin-left: 18%;
+  margin-top: 10%;
+  width: 200px;
 }
