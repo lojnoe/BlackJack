@@ -277,8 +277,13 @@ const App = () => {
               <p key={index}>{message}</p>
             ))}
           </div>
+         
         </div>
-
+        
+      </div>
+      <div>
+      <img className='cuphead' src="./assets/Nueva carpeta/Cup_run.webp" alt=""></img>
+      <img className='cuphead1' src="./assets/Nueva carpeta/Cup_run.webp" alt=""></img>
       </div>
     </div>
   );
