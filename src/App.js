@@ -288,8 +288,8 @@ const App = () => {
 
       </div>
       <div>
-        <img className='cuphead' src="./assets/Nueva carpeta/Cup_run.webp" alt=""></img>
-        <img className='cuphead1' src="./assets/Nueva carpeta/MugmanTrailer.webp" alt=""></img>
+        <img className='cuphead' src="./assets/fotos/Cup_run.webp" alt=""></img>
+        <img className='cuphead1' src="./assets/fotos/MugmanTrailer.webp" alt=""></img>
       </div>
     </div>
   );
